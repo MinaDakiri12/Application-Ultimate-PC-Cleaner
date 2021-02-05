@@ -12,6 +12,6 @@ let mainWndow;
 app.on('ready', function(){
     // Create new window
     mainWndow = new BrowserWindow({});
-    // Loard html into window
+    // Load html into window
 
 });
