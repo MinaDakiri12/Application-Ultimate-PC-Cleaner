@@ -16,42 +16,51 @@
                 <h1>pc-cleaner</h1>
             </div>
             <ul>
-                <li>
+                <li id="analyse" onclick="analyse()">
                     <i class="fa fa-search" aria-hidden="true"></i>analyser</li>
-                <li>
+                <li id="nettoyer" onclick="nettoyer()">
                     <i class="fa fa-trash" aria-hidden="true"></i>nettoyer</li>
                 <li>
                     <i class="fa fa-history" aria-hidden="true"></i>historique</li>
             </ul>
             <div class="sidebar-bottom">
-                <button>Quitter</button>
+                <button >Quitter</button>
             </div>
         </section>
         <section class="head">
             <div class="left">
                 <h1>Analyse du PC nécessaire</h1>
-                <button>Analyser</button>
+                <button id="nettoyer" onclick="nettoyer()">Analyser</button>
             </div>
         </section>
         <section class="functionalities">
-            <a href="">
-                <div>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    analyser
-                </div>
-            </a>
-            <a href="">
+            <div id="myProgress">
+                    <div id="icon" class="success-checkmark">
+                            <div class="check-icon">
+                              <span class="icon-line line-tip"></span>
+                              <span class="icon-line line-long"></span>
+                              <div class="icon-circle"></div>
+                              <div class="icon-fix"></div>
+                            </div>
+                          
+                          </div>
+                <h3 id='txt'>Cheking temporary files...</h3>
+                <div id="myBar"></div>
+            </div>
+            <button id="btn" onclick="deleted()">
                 <div>
                     <i class="fa fa-trash" aria-hidden="true"></i>
-                    nettyoer
+                    nettoyer
                 </div>
-            </a>
-            <a href="">
+            </button>
+            <button href="" id="btn2" onclick="home()">
                 <div>
-                    <i class="fa fa-history" aria-hidden="true"></i>
-                    historique
+                    <i class="fa fa-undo" aria-hidden="true"></i>
+                    <span>retour</span>
                 </div>
-            </a>
+            </button>
         </section>
+
+        <script src="fsFile.js"></script>
     </body>
 </html>
