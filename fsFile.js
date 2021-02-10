@@ -155,4 +155,12 @@ const home = () =>{
 }
 
 
+function openWindow() {
+  openedWindow = window.open('index.html');
+}
+
+const quit = () => {
+ window.close();
+  
+}
 
