@@ -160,7 +160,14 @@ const home = () =>{
 }
 
 
+function openWindow() {
+  openedWindow = window.open('index.html');
+}
 
+const quit = () => {
+ window.close();
+  
+}
 
 const cookies= () => {
   if (i == 0) {
@@ -209,7 +216,5 @@ const cookies= () => {
   }
 };
 
-function newFunction() {
-  x = 20;
-}
+
 
